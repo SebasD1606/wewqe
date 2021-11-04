@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    width: 100%;
+    background: url(../img/bg-header.png);
+    /* para llamar una imagen de fondo utilizamos la propiedad
+     url y la ruta seria ../ para salir de la carpeta y luego
+      se llama la imagen. */
+    background-size: cover;
+    /* cover ajusta la imagen al ancho y alto del elemento
+     contenedor */
+    height: 100vh;
+    padding-top: 40px;
+}
+
+
+/* CONTENEDOR DEL ENCABEZADO */
+
+header nav {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    /* se centra el contenedor */
+    display: flex;
+    /* se usa el display flex para ubicar los contenidos
+     uno junto a otro
+     eje x */
+    justify-content: space-evenly;
+    /* eje y */
+    align-items: center;
+}
+
+
+/* CONTENIDO DEL CONTENEDOR */
+
+header nav ul {
+    display: flex;
+}
+
+
+/* MENU */
+
+header nav ul li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+
+/* MENU */
+
+header nav ul li a {
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 7px 15px;
+}
+
+
+/* MENU PASANDO EL RATON */
+
+header nav ul li a:hover {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+/* EL GIRO */
+
+header #hero {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+/* TITULO PRINCIPAL DEL GIRO */
+
+header #hero h1 {
+    color: #e8f00c;
+    font-size: 60px;
+    margin: 0px;
+}
+
+
+/* SUBTITULO DEL GIRO */
+
+header #hero h2 {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+
+/* BOTON DE EMPEZAR */
+
+header #hero a {
+    background: #e8f00c;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 12px;
+    color: gray;
+    transition: 0.5s;
+}
+
+
+/* BOTON DE EMPEZAR PASANDO EL RATON */
+
+header #hero a:hover {
+    padding: 18px 50px;
+    border-radius: 0px;
+    background-color: honeydew;
+}
+
+/* SECCIÓN PLANES */
+#planes {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#planes .container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#planes h2 {
+    font-size: 60px;
+}
+
+#planes p {
+    font-size: 20px;
+}
+
+#planes .fila {
+     display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+#planes .fila .card {
+    position: relative;       
+}
+
+#planes .fila .card:hover {
+    background-color: lightblue;
+}
+
+#planes .fila .card h3{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 100px;
+    color: #e8f00c;
+    font-size: 25px;
+}
+
+/* SECCION DESTINOS */
+#destinos {
+    background-image: url(../img/bg-destinos.png);
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-size: cover;
+}
+
+#destinos .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#destinos .container h2 {
+    font-size: 60px;
+    color: #e8f00c;
+}
+
+#destinos .container p {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#destinos .container .fila {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-around;
+    
+}
+
+#destinos .container .fila .card:hover {
+    opacity: 80%;
+}
+/* SECCION CONTACTO */
+#contacto {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-size: cover;
+    background-color: #e8f00c;
+}
+
+#contacto .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+#contacto .container h2 {
+    font-size: 60px;
+}
+
+#contacto .container p {
+    font-size: 20px;
+}
+
+#contacto .fila input {
+    padding: 5px 15px; 
+    font-size: 20px;
+    width: 300px;
+    margin: 15px; 
+    border-radius: 4px;
+    border: 1px black;     
+}
+
+#contacto .fila select {
+    padding: 5px 15px; 
+    font-size: 20px;
+    width: 333px;
+    margin: 15px;
+    border-radius: 4px;  
+}
+
+#contacto button {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+#contacto button:hover {
+    background-color: #ffffff;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    margin:initial;
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
